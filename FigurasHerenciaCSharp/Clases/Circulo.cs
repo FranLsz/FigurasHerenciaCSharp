@@ -8,7 +8,15 @@ namespace FigurasHerenciaCSharp.Clases
 {
     class Circulo : Figura
     {
+
+        #region Propiedades
+
         public double Radio { get; set; }
+
+        #endregion
+
+
+        #region Constructores
 
         public Circulo() : base()
         {
@@ -20,6 +28,11 @@ namespace FigurasHerenciaCSharp.Clases
             Nombre = nombre;
             Radio = radio;
         }
+
+        #endregion
+
+
+        #region Metodos
 
         public override string Detalles()
         {
@@ -35,5 +48,8 @@ namespace FigurasHerenciaCSharp.Clases
         {
             return 2 * Math.PI * Radio;
         }
+
+        #endregion
+
     }
 }

@@ -8,7 +8,15 @@ namespace FigurasHerenciaCSharp.Clases
 {
     public abstract class Figura
     {
+
+        #region Propiedades
+
         public string Nombre { get; set; }
+
+        #endregion
+
+
+        #region Constructores
 
         protected Figura()
         {
@@ -20,10 +28,16 @@ namespace FigurasHerenciaCSharp.Clases
             Nombre = nombre;
         }
 
+        #endregion
+
+
+        #region Metodos
 
         public abstract string Detalles();
         public abstract double Area();
         public abstract double Perimetro();
+
+        #endregion
 
     }
 }

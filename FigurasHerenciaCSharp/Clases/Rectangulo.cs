@@ -8,8 +8,15 @@ namespace FigurasHerenciaCSharp.Clases
 {
     class Rectangulo : Figura
     {
+        #region Propiedades
+
         public double Ancho { get; set; }
         public double Alto { get; set; }
+
+        #endregion
+
+
+        #region Constructores
 
         public Rectangulo() : base()
         {
@@ -24,6 +31,11 @@ namespace FigurasHerenciaCSharp.Clases
             Alto = alto;
         }
 
+        #endregion
+
+
+
+        #region Metodos
 
         public override string Detalles()
         {
@@ -39,5 +51,8 @@ namespace FigurasHerenciaCSharp.Clases
         {
             return (2 * Ancho) + (2 * Alto);
         }
+
+        #endregion
+
     }
 }

@@ -11,15 +11,14 @@ namespace FigurasHerenciaCSharp
     {
         static void Main(string[] args)
         {
-            Circulo c1= new Circulo();
+            //Instanciamiento de objetos
+            Circulo c1 = new Circulo();
             c1.Nombre = "miCirculo";
             c1.Radio = 4.566;
 
             Rectangulo r1 = new Rectangulo("miRectangulo", 20, 40);
 
-
-
-
+            //se muestran por consola
             Console.WriteLine(c1.Detalles());
             Console.WriteLine(r1.Detalles());
 
