@@ -34,7 +34,8 @@ namespace FigurasHerenciaCSharp.Clases
 
         #region Metodos
 
-        public override string Detalles()
+        //sealed impide que se sobreescriba el metodo en los hijos de Circulo
+        public sealed override string Detalles()
         {
             return "El nombre del circulo es: " + Nombre + " y su area es: " + Area();
         }
@@ -48,6 +49,8 @@ namespace FigurasHerenciaCSharp.Clases
         {
             return 2 * Math.PI * Radio;
         }
+
+        
 
         #endregion
 

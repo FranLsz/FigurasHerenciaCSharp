@@ -33,10 +33,36 @@ namespace FigurasHerenciaCSharp.Clases
 
         #region Metodos
 
-        public abstract string Detalles();
+        public virtual string Detalles()
+        {
+            return "El nombre de la figura es " + Nombre;
+        }
         public abstract double Area();
         public abstract double Perimetro();
 
+        public void ObtenerInfo(Figura f)
+        {
+            //devuelve la clase del objeto
+            Console.WriteLine(f.GetType());
+
+            //si la Figura es un Rectangulo
+            if (f is Rectangulo)
+            {
+                Console.WriteLine("Esto es un rectangulo");
+                var r = (Rectangulo)f;
+                Console.WriteLine(r.Ancho);
+            }
+            //si es un circulo
+            else if (f is Circulo)
+            {
+                Console.WriteLine("Esto es un circulo");
+                var r = (Circulo)f;
+                Console.WriteLine(r.Radio);
+
+            }
+
+            var area = f.Area();
+        }
         #endregion
 
     }

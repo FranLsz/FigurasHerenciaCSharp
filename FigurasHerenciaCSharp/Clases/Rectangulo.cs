@@ -37,10 +37,10 @@ namespace FigurasHerenciaCSharp.Clases
 
         #region Metodos
 
-        public override string Detalles()
+        /*public override string Detalles()
         {
             return "El nombre del rectangulo es: " + Nombre + " X y su area es: " + Area();
-        }
+        }*/
 
         public override double Area()
         {
