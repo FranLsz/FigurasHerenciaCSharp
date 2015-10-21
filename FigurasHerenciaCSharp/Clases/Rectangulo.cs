@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FigurasHerenciaCSharp.Interfaces;
 
 namespace FigurasHerenciaCSharp.Clases
 {
-    class Rectangulo : Figura
+    class Rectangulo : Figura, ICalculosGeometricos, IComparable, IComparer
     {
         #region Propiedades
 
@@ -54,5 +56,35 @@ namespace FigurasHerenciaCSharp.Clases
 
         #endregion
 
+        public string Definicion { get; set; }
+        public double CalcularMetros()
+        {
+            throw new NotImplementedException();
+        }
+
+        public double CalcularPrecioTotal(double precioMetro)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Representar()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Colorear(string color)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int CompareTo(object obj)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int Compare(object x, object y)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
